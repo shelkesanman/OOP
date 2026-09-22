@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class student {
+
+    public:
+
+    string name;
+    char division;
+    int rollno;
+    int marks;
+    
+
+    student(string name,char division,int rollno, int marks) {
+
+        this->name = name;
+        this->division = division;
+        this->rollno = rollno;
+        this->marks = marks;
+    }
+    
+    void display() {
+        
+        cout <<"=== STUDENT DETAILS===="<<endl;
+        cout << "Student Name: "<<this->name << endl;
+        cout <<"Division: "<<this->division<<endl;
+        
+        cout << "Roll no: " << this->rollno << endl;
+        cout << "Marks: " << this->marks << endl;
+    }
+};
+
+int main() {
+    student s1("sanman",'A',123, 55);
+    student s2("ganesh",'B',111, 99);
+    s1.display();
+    s2.display();
+    return 0;
+}
