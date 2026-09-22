@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+class student
+
+{ public:
+
+ string name;
+  
+ int rno;
+
+ char div;
+
+ void display()
+
+ {
+
+  cout<<"Name: "<<name<<endl;
+     
+  cout <<"Rno: "<<rno << endl;
+
+  cout<< "Div: "<<div << endl;
+
+  
+ }
+};
+
+int main ()
+
+{
+
+student s1;
+
+s1.name="sanman";
+
+s1.rno=1;
+
+s1. div='B';
+
+
+
+s1.display();
+
+return 0;
+
+}
