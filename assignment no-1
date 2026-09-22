@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+
+class book
+{
+public:
+    int bookID;
+    string name;
+    float price;
+    char section;
+
+    void display()
+    {
+        cout<<"----BOOK DETAILS----"<<endl;
+        cout<<"Book ID: "<<bookID<<endl;
+        cout<<"Book Name: "<<name<<endl;
+        cout<<"Book Price: "<<price<<endl;
+        cout<<"Section: "       
+<<section<<endl;
+    }
+};
+
+int main()
+{
+    book b1;
+
+    b1.bookID=100;
+    b1.name="oop";
+    b1.price=999.9;
+    b1.section='A';
+    b1.display();
+
+    return 0;
+}
